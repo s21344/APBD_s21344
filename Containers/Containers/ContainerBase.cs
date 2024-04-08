@@ -9,8 +9,28 @@ public abstract class ContainerBase
     protected double ContainerWeight { get; }
     protected double MaxWeight { get; }
 
-    protected double LoadWeight { get; set; }
+    protected double LoadWeight;
+    
+    protected string SerialNumber;
 
+
+    public double getLoadWeight()
+    {
+        return LoadWeight;
+    }
+
+    public void setLoadWeight(double weight)
+    {
+        
+        if (weight < MaxWeight)
+            LoadWeight = weight;
+        else
+        {
+            throw new OverfillException("The student cannot be found.");
+        }
+    }
+
+    
     
 
 
@@ -32,12 +52,13 @@ public abstract class ContainerBase
     //         }
     //     }
     // }
-    
-    
 
 
-    protected string SerialNumber;
-    
+    protected ContainerBase()
+    {
+    }
+
+
     public ContainerBase(int height, int width,int length, double containerWeight,double maxWeight ,double loadWeight, string serialNumber)
     {
         this.Height = height;
