@@ -3,7 +3,7 @@
 namespace Zad5_RestAPI.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("api/animal")]
 public class AnimalController : ControllerBase
 {
     private static readonly string[] Names = new[]
@@ -20,7 +20,7 @@ public class AnimalController : ControllerBase
         "czerwony", "czarny", "biały", "żółty"
     };
     
-    private static readonly Animal[] animals = Enumerable.Range(1, 6).Select(index => new Animal
+    private static List<Animal> _animals = Enumerable.Range(1, 6).Select(index => new Animal
         {
             Id =index-1,
             Name = Names[Random.Shared.Next(Names.Length)],
@@ -28,7 +28,7 @@ public class AnimalController : ControllerBase
             Mass = Random.Shared.Next(1,40),
             Color = Colors[Random.Shared.Next(Colors.Length)],
         })
-        .ToArray();
+        .ToList();
 
     private readonly ILogger<AnimalController> _logger;
 
@@ -38,23 +38,48 @@ public class AnimalController : ControllerBase
     }
 
     [HttpGet(Name = "GetAnimals")]
-    public IEnumerable<Animal> GET(int id)
+    public IActionResult GetAnimals()
     {
-        return animals;
+        return Ok(_animals);
     }
     
-    
-    [HttpPut(Name = "PutAnimal")]
-    public IEnumerable<Animal> PUT(string name, string category, int mass, string color)
+    [HttpGet("{id:int}")]
+    public IActionResult GETAnimals(int id)
     {
-        animals.Append(new Animal
-        {
-            Id = animals.Length,
-            Name=name,
-            Category = category,
-            Mass = mass,
-            Color = color
-        });
-        return animals;
+        var animal = _animals.FirstOrDefault(an => an.Id == id);
+        if (animal == null)
+            return NotFound($"Animal with id {id} was not found");
+        return Ok(_animals[id]);
+    }
+    
+    [HttpPost(Name = "PostAnimal")]
+    public IActionResult Post(Animal animal)
+    {
+        _animals.Add(animal);
+        return StatusCode(StatusCodes.Status201Created);
+    }
+    
+    [HttpPut("{id:int}")]
+    public IActionResult PutAnimal(int id, Animal animal)
+    {
+        var animalToEdit = _animals.FirstOrDefault(an => an.Id == id);
+        if (animalToEdit == null)
+            return NotFound($"Animal with id {id} was not found");
+        if(id!=animal.Id)
+            return StatusCode(404);
+        
+        _animals.Remove(animalToEdit);
+        _animals.Add(animal);
+        return NoContent();
+    }
+    
+    [HttpDelete("{id:int}")]
+    public IActionResult DeleteAnimal(int id)
+    {
+        var animal= _animals.FirstOrDefault(an => an.Id == id);
+        if (animal== null)
+            return NotFound($"Animal with id {id} was not found");
+        _animals.Remove(animal);
+        return NoContent();
     }
 }
