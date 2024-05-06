@@ -25,9 +25,10 @@ D:\Programming\_Projects\Github\APBD\Zad5_RestAPI\Zad5_RestAPI\Zad5_RestAPI\obj\
 D:\Programming\_Projects\Github\APBD\Zad5_RestAPI\Zad5_RestAPI\Zad5_RestAPI\obj\Debug\net7.0\staticwebassets.build.json
 D:\Programming\_Projects\Github\APBD\Zad5_RestAPI\Zad5_RestAPI\Zad5_RestAPI\obj\Debug\net7.0\staticwebassets.development.json
 D:\Programming\_Projects\Github\APBD\Zad5_RestAPI\Zad5_RestAPI\Zad5_RestAPI\obj\Debug\net7.0\scopedcss\bundle\Zad5_RestAPI.styles.css
-D:\Programming\_Projects\Github\APBD\Zad5_RestAPI\Zad5_RestAPI\Zad5_RestAPI\obj\Debug\net7.0\Zad5_RestAPI.csproj.CopyComplete
 D:\Programming\_Projects\Github\APBD\Zad5_RestAPI\Zad5_RestAPI\Zad5_RestAPI\obj\Debug\net7.0\Zad5_RestAPI.dll
 D:\Programming\_Projects\Github\APBD\Zad5_RestAPI\Zad5_RestAPI\Zad5_RestAPI\obj\Debug\net7.0\refint\Zad5_RestAPI.dll
 D:\Programming\_Projects\Github\APBD\Zad5_RestAPI\Zad5_RestAPI\Zad5_RestAPI\obj\Debug\net7.0\Zad5_RestAPI.pdb
 D:\Programming\_Projects\Github\APBD\Zad5_RestAPI\Zad5_RestAPI\Zad5_RestAPI\obj\Debug\net7.0\Zad5_RestAPI.genruntimeconfig.cache
 D:\Programming\_Projects\Github\APBD\Zad5_RestAPI\Zad5_RestAPI\Zad5_RestAPI\obj\Debug\net7.0\ref\Zad5_RestAPI.dll
+D:\Programming\_Projects\Github\APBD\Zad5_RestAPI\Zad5_RestAPI\Zad5_RestAPI\obj\Debug\net7.0\Zad5_RestAPI.sourcelink.json
+D:\Programming\_Projects\Github\APBD\Zad5_RestAPI\Zad5_RestAPI\Zad5_RestAPI\obj\Debug\net7.0\Zad5_Res.FEF81C42.Up2Date
