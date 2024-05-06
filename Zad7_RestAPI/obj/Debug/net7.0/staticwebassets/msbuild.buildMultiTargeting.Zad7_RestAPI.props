@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Zad7_RestAPI.props" />
+</Project>
