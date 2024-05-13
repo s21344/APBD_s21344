@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Zad5_RestAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d29a47377ddc624d5a5618ead160bcaed6ccd6e6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c888618fabdbe0db16307f6761ebb6ed3d59870c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Zad5_RestAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Zad5_RestAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

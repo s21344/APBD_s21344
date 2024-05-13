@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Zad5_RestAPI.Controllers;
 
 [ApiController]
-[Route("api/animal")]
+[Route("api/order")]
 public class OrderController : ControllerBase
 {
     

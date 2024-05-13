@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Zad5_RestAPI.Controllers;
 
 [ApiController]
-[Route("api/animal")]
+[Route("api/product_warehouse")]
 public class Product_WarehouseController : ControllerBase
 {
     

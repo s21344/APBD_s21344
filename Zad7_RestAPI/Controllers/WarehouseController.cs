@@ -3,7 +3,7 @@
 namespace Zad5_RestAPI.Controllers;
 
 [ApiController]
-[Route("api/animal")]
+[Route("api/warehouse")]
 public class WarehouseController : ControllerBase
 {
     

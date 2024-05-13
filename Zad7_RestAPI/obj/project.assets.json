@@ -474,11 +474,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Apps\\Programming\\GIthub_Projects\\APBD\\Zad7_RestAPI\\Zad7_RestAPI.csproj",
+      "projectUniqueName": "D:\\Programming\\_Projects\\Github\\APBD\\Zad7_RestAPI\\Zad7_RestAPI.csproj",
       "projectName": "Zad7_RestAPI",
-      "projectPath": "D:\\Apps\\Programming\\GIthub_Projects\\APBD\\Zad7_RestAPI\\Zad7_RestAPI.csproj",
+      "projectPath": "D:\\Programming\\_Projects\\Github\\APBD\\Zad7_RestAPI\\Zad7_RestAPI.csproj",
       "packagesPath": "C:\\Users\\kubaw\\.nuget\\packages\\",
-      "outputPath": "D:\\Apps\\Programming\\GIthub_Projects\\APBD\\Zad7_RestAPI\\obj\\",
+      "outputPath": "D:\\Programming\\_Projects\\Github\\APBD\\Zad7_RestAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kubaw\\AppData\\Roaming\\NuGet\\NuGet.Config"
