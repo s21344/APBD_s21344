@@ -250,7 +250,7 @@ public static partial class Tasks
                     dep => dep.Deptno,
                     emp => emp.Deptno,
                     (dep, emp) => new { Depts = dep, Emps = emp })
-                .Where(dept => dept.Emps.Count() == 5 || dept.Emps.Count() == 0)
+                .Where(dept => dept.Emps.Count() == 5 || !dept.Emps.Any()) //Tylko 5 pracowników, a nie minimum 5 pracowników. Przez chwilę myślałem, że testy były bardzo mylące
                 .Select(dept => new Dept
                 {
                     Deptno = dept.Depts.Deptno,
@@ -258,6 +258,8 @@ public static partial class Tasks
                     Loc =dept.Depts.Loc
                 })
                 .OrderBy(d => d.Dname);
+        
+        Console.WriteLine(results.ToList().Count());
         
         return results;
     }

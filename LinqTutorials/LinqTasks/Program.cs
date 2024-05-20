@@ -4,6 +4,9 @@ namespace LinqTasks;
 
 class Program
 {
+
+    private static int[] Array = { 1, 1, 1, 1, 1, 1, 10, 1, 1, 1, 1, 10, 2, 10, 10 };
+
     static void Main(string[] args)
     {
         Console.WriteLine("======= ZAD 1 =======");
@@ -14,8 +17,8 @@ class Program
         {
             Console.WriteLine(emp);
         }
-        
-        
+
+
         Console.WriteLine("======= ZAD 2 =======");
 
         IEnumerable<Emp> Zad2 = Tasks.Task2();
@@ -24,12 +27,12 @@ class Program
         {
             Console.WriteLine(emp);
         }
-        
+
         Console.WriteLine("======= ZAD 3 =======");
-        
-            Console.WriteLine(Tasks.Task3());
-        
-        
+
+        Console.WriteLine(Tasks.Task3());
+
+
         Console.WriteLine("======= ZAD 4 =======");
 
         IEnumerable<Emp> Zad4 = Tasks.Task4();
@@ -38,8 +41,8 @@ class Program
         {
             Console.WriteLine(emp);
         }
-        
-        
+
+
         Console.WriteLine("======= ZAD 5 =======");
 
         IEnumerable<object> Zad5 = Tasks.Task5();
@@ -48,7 +51,7 @@ class Program
         {
             Console.WriteLine(emp);
         }
-        
+
         Console.WriteLine("======= ZAD 6 =======");
 
         IEnumerable<object> Zad6 = Tasks.Task6();
@@ -57,7 +60,7 @@ class Program
         {
             Console.WriteLine(emp);
         }
-        
+
         Console.WriteLine("======= ZAD 7 =======");
 
         IEnumerable<object> Zad7 = Tasks.Task7();
@@ -66,21 +69,18 @@ class Program
         {
             Console.WriteLine(emp);
         }
-        
+
         Console.WriteLine("======= ZAD 8 =======");
-        
+
         Console.WriteLine(Tasks.Task8());
+
+
+        Console.WriteLine("======= ZAD 9 =======");
         
+        Emp Zad9 = Tasks.Task9();
+        Console.WriteLine(Zad9);
         
-        // Console.WriteLine("======= ZAD 9 =======");
-        //
-        // IEnumerable<Emp> Zad9 = Tasks.Task9();
-        //
-        // foreach (Emp emp in Zad9)
-        // {
-        //     Console.WriteLine(emp);
-        // }
-        
+
         Console.WriteLine("======= ZAD 10 =======");
 
         IEnumerable<object> Zad10 = Tasks.Task10();
@@ -89,7 +89,7 @@ class Program
         {
             Console.WriteLine(emp);
         }
-        
+
         Console.WriteLine("======= ZAD 11 =======");
 
         IEnumerable<object> Zad11 = Tasks.Task11();
@@ -98,39 +98,36 @@ class Program
         {
             Console.WriteLine(emp);
         }
-        
-        // Console.WriteLine("======= ZAD 12 =======");
 
-        // IEnumerable<Emp> Zad12 = Tasks.Task12();
-        //
-        // foreach (Emp emp in Zad12)
-        // {
-        //     Console.WriteLine(emp.Mgr);
-        //     Console.WriteLine(emp.Empno);
-        // }
-        
-        // Console.WriteLine("======= ZAD 13 =======");
-        //
-        //  Zad13 = Tasks.Task13();
-        //
-        // foreach (Emp emp in Zad13)
-        // {
-        //     Console.WriteLine(emp);
-        // }
-        //
+        Console.WriteLine("======= ZAD 12 =======");
+
+        IEnumerable<Emp> Zad12 = Tasks.Task12();
+
+        foreach (Emp emp in Zad12)
+        {
+            Console.WriteLine(emp);
+        }
+
+        Console.WriteLine("======= ZAD 13 =======");
+
+        var Zad13 = Tasks.Task13(Array);
+        Console.WriteLine("Zad 13 number = " + Zad13);
+
+
         Console.WriteLine("======= ZAD 14 =======");
-        
+
         IEnumerable<Dept> Zad14 = Tasks.Task14();
-        
+
         foreach (Dept dept in Zad14)
         {
             Console.WriteLine(dept);
         }
-       
-        
-        
-        
-        
-        
+
     }
+
 }
+
+
+
+
+
