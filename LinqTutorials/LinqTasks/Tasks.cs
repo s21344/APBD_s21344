@@ -230,7 +230,13 @@ public static partial class Tasks
     /// </summary>
     public static int Task13(int[] arr)
     {
-        return -1;
+        var data =
+            arr.GroupBy(x => x)
+                .Where(grouped => grouped.Count() % 2 == 1)
+                .Select(grouped => grouped.Key)
+                .Take(1); //Zakładamy, że zawsze będzie jedna taka liczba.
+
+        return data.ElementAt(0); //Musi być jeden element według zadania. Postanowiłem przez to nie obsługiwać błędu.
     }
 
     /// <summary>
