@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Programming\\_Projects\\Github\\APBD\\Zad7_RestAPI\\Zad7_RestAPI.csproj": {}
+    "D:\\GithubProjects\\APBD\\Zad7_RestAPI\\Zad7_RestAPI.csproj": {}
   },
   "projects": {
-    "D:\\Programming\\_Projects\\Github\\APBD\\Zad7_RestAPI\\Zad7_RestAPI.csproj": {
+    "D:\\GithubProjects\\APBD\\Zad7_RestAPI\\Zad7_RestAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Programming\\_Projects\\Github\\APBD\\Zad7_RestAPI\\Zad7_RestAPI.csproj",
+        "projectUniqueName": "D:\\GithubProjects\\APBD\\Zad7_RestAPI\\Zad7_RestAPI.csproj",
         "projectName": "Zad7_RestAPI",
-        "projectPath": "D:\\Programming\\_Projects\\Github\\APBD\\Zad7_RestAPI\\Zad7_RestAPI.csproj",
+        "projectPath": "D:\\GithubProjects\\APBD\\Zad7_RestAPI\\Zad7_RestAPI.csproj",
         "packagesPath": "C:\\Users\\kubaw\\.nuget\\packages\\",
-        "outputPath": "D:\\Programming\\_Projects\\Github\\APBD\\Zad7_RestAPI\\obj\\",
+        "outputPath": "D:\\GithubProjects\\APBD\\Zad7_RestAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kubaw\\AppData\\Roaming\\NuGet\\NuGet.Config"

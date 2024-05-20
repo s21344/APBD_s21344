@@ -1,0 +1,15 @@
+D:\GithubProjects\APBD\LinqTasks\LinqTutorials\LinqTasks\bin\Debug\net7.0\LinqTasks.exe
+D:\GithubProjects\APBD\LinqTasks\LinqTutorials\LinqTasks\bin\Debug\net7.0\LinqTasks.deps.json
+D:\GithubProjects\APBD\LinqTasks\LinqTutorials\LinqTasks\bin\Debug\net7.0\LinqTasks.runtimeconfig.json
+D:\GithubProjects\APBD\LinqTasks\LinqTutorials\LinqTasks\bin\Debug\net7.0\LinqTasks.dll
+D:\GithubProjects\APBD\LinqTasks\LinqTutorials\LinqTasks\bin\Debug\net7.0\LinqTasks.pdb
+D:\GithubProjects\APBD\LinqTasks\LinqTutorials\LinqTasks\obj\Debug\net7.0\LinqTasks.GeneratedMSBuildEditorConfig.editorconfig
+D:\GithubProjects\APBD\LinqTasks\LinqTutorials\LinqTasks\obj\Debug\net7.0\LinqTasks.AssemblyInfoInputs.cache
+D:\GithubProjects\APBD\LinqTasks\LinqTutorials\LinqTasks\obj\Debug\net7.0\LinqTasks.AssemblyInfo.cs
+D:\GithubProjects\APBD\LinqTasks\LinqTutorials\LinqTasks\obj\Debug\net7.0\LinqTasks.csproj.CoreCompileInputs.cache
+D:\GithubProjects\APBD\LinqTasks\LinqTutorials\LinqTasks\obj\Debug\net7.0\LinqTasks.dll
+D:\GithubProjects\APBD\LinqTasks\LinqTutorials\LinqTasks\obj\Debug\net7.0\refint\LinqTasks.dll
+D:\GithubProjects\APBD\LinqTasks\LinqTutorials\LinqTasks\obj\Debug\net7.0\LinqTasks.pdb
+D:\GithubProjects\APBD\LinqTasks\LinqTutorials\LinqTasks\obj\Debug\net7.0\LinqTasks.genruntimeconfig.cache
+D:\GithubProjects\APBD\LinqTasks\LinqTutorials\LinqTasks\obj\Debug\net7.0\ref\LinqTasks.dll
+D:\GithubProjects\APBD\LinqTasks\LinqTutorials\LinqTasks\obj\Debug\net7.0\LinqTasks.csproj.AssemblyReference.cache
