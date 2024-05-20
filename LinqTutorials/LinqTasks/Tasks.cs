@@ -239,34 +239,20 @@ public static partial class Tasks
     /// </summary>
     public static IEnumerable<Dept> Task14()
     {
-        var results2 =
-            Emps.Join(Depts,
-                    emp => emp.Deptno,
+        var results =
+            Depts.GroupJoin(Emps,
                     dep => dep.Deptno,
-                    (emp, dep) => new { Emps = emp, Depts = dep })
-                .OrderBy(d => d.Depts.Dname)
-                .GroupBy(emp1 => new { emp1.Depts.Dname, emp1.Depts.Deptno ,emp1.Depts.Loc })
-                .Where(g => g.Count() == 5)
-                .Select(g => new Dept
-                {
-                    Deptno = g.Key.Deptno,
-                    Dname=g.Key.Dname,
-                    Loc =g.Key.Loc 
-                });
-        
-        var results3 =
-            Emps.Join(Depts,
                     emp => emp.Deptno,
-                    dep => dep.Deptno,
-                    (emp, dep) => new { Emps = emp, Depts = dep })
-                .GroupBy(emp1 => new{ emp1.Depts.Dname})
-                .Select(grouped => new Dept
+                    (dep, emp) => new { Depts = dep, Emps = emp })
+                .Where(dept => dept.Emps.Count() == 5 || dept.Emps.Count() == 0)
+                .Select(dept => new Dept
                 {
-                    Dname = grouped.Key.Dname
-                });
+                    Deptno = dept.Depts.Deptno,
+                    Dname=dept.Depts.Dname,
+                    Loc =dept.Depts.Loc
+                })
+                .OrderBy(d => d.Dname);
         
-        Console.WriteLine(results2.Count());
-        
-        return results3;
+        return results;
     }
 }
