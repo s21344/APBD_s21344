@@ -94,19 +94,20 @@ class Program
 
         IEnumerable<object> Zad11 = Tasks.Task11();
 
-        foreach (Emp emp in Zad11)
+        foreach (object emp in Zad11)
         {
             Console.WriteLine(emp);
         }
         
-        Console.WriteLine("======= ZAD 12 =======");
+        // Console.WriteLine("======= ZAD 12 =======");
 
-        IEnumerable<Emp> Zad12 = Tasks.Task12();
-
-        foreach (Emp emp in Zad12)
-        {
-            Console.WriteLine(emp);
-        }
+        // IEnumerable<Emp> Zad12 = Tasks.Task12();
+        //
+        // foreach (Emp emp in Zad12)
+        // {
+        //     Console.WriteLine(emp.Mgr);
+        //     Console.WriteLine(emp.Empno);
+        // }
         
         // Console.WriteLine("======= ZAD 13 =======");
         //
@@ -117,14 +118,14 @@ class Program
         //     Console.WriteLine(emp);
         // }
         //
-        // Console.WriteLine("======= ZAD 14 =======");
-        //
-        // IEnumerable<Emp> Zad14 = Tasks.Task14();
-        //
-        // foreach (Emp emp in Zad14)
-        // {
-        //     Console.WriteLine(emp);
-        // }
+        Console.WriteLine("======= ZAD 14 =======");
+        
+        IEnumerable<Dept> Zad14 = Tasks.Task14();
+        
+        foreach (Dept dept in Zad14)
+        {
+            Console.WriteLine(dept);
+        }
        
         
         
