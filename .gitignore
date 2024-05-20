@@ -49,4 +49,9 @@
 modules.order
 Module.symvers
 Mkfile.old
-dkms.conf
+dkms.
+
+*.idea
+*LinqTutorials.sln.DotSettings.user
+*LinqTutorials/*/bin
+*LinqTutorials/*/obj
